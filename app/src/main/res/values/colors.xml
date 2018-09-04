@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorSky</color>
+    <color name="colorPrimaryDark">@color/colorSky</color>
+    <color name="colorAccent">@color/colorSky</color>
+
+    <color name="colorInfo">@android:color/white</color>
+    <color name="colorSky">#84D4F8</color>
+</resources>
