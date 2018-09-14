@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 
-class BroadcastApplication(val activity: ClockActivity): BroadcastReceiver() {
+class BroadcastApplication(private val activity: ClockActivity): BroadcastReceiver() {
 
     companion object {
         const val FILTER = "ba_filter"

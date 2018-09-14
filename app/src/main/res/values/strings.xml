@@ -1,13 +1,6 @@
 <resources>
     <string name="app_name">Relogio Mundial</string>
-
-    <string name="info_icon_desc">
-        Ícone de informativo de horário em uso.
-    </string>
-
-    <string name="info_content">
-        Temporariamente o aplicativo está utilizando o horário do
-        aparelho. Assim que o retorno do servidor NTP acontecer
-        esse informe será removido de tela.
-    </string>
+    <string name="info_icon_desc">Ícone de informativo de horário em uso.</string>
+    <string name="info_content">Temporariamente o aplicativo está utilizando o horário doaparelho. Assim que o retorno do servidor NTP aconteceresse informe será removido de tela.</string>
+    <string name="anim_sun_and_moon">Animação de Sol e Lua</string>
 </resources>
