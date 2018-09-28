@@ -54,6 +54,8 @@ class LottieContainer(private val context: Context, private val animation: Lotti
 
         this.hour = hour
         animation.speed = speedValue
+        animation.useHardwareAcceleration(true)
+        animation.enableMergePathsForKitKatAndAbove(true)
         animation.playAnimation()
 
         updateActivityViewsColor()

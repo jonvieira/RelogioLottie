@@ -14,19 +14,16 @@ import java.util.*
 
 class ClockActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    lateinit var countriesGmt: Array<String>
-    lateinit var broadcast: BroadcastApplication
-    lateinit var lottieContainer: LottieContainer
+    private lateinit var countriesGmt: Array<String>
+    private lateinit var broadcast: BroadcastApplication
+    private lateinit var lottieContainer: LottieContainer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clock)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            window.setFlags(
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-            )
+            window.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
         }
 
         initBroadcastReceiver()
@@ -50,8 +47,7 @@ class ClockActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(adapter: AdapterView<*>?, itemView: View?, position: Int, id: Long) {
-        AsyncTrueTime(this)
-                .execute(countriesGmt[position])
+        AsyncTrueTime(this).execute(countriesGmt[position])
     }
 
     override fun onNothingSelected(adapter: AdapterView<*>?) {}
